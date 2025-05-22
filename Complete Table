@@ -1,0 +1,252 @@
+Final Fantasy X International [SLPS-25088] (J) [658597E2]
+// Compiled .pnach file for Final Fantasy X International (NTSC-J)
+// All codes are commented out by default. Remove '//' to activate a code.
+
+// --- Master Code (Often not strictly necessary for AetherSX2/PCSX2 but sometimes included) ---
+// patch=1,EE,F01000A4,word,0032161F
+
+// --- Language & Accessibility ---
+// Force English (if you have a Japanese ISO and want English text)
+// patch=1,EE,0031ce5e,byte,00000001
+
+// Al Bhed Dialogue Translated / All Al Bhed Primers Acquired Effect
+// patch=1,EE,2031CE60,extended,FFFFFFFF
+
+// --- General Gameplay & Progression ---
+// Max Gil (99,999,999)
+// patch=1,EE,2031D318,extended,05F5E0FF
+
+// Unlock All Airship Locations
+// patch=1,EE,10319DD0,extended,0000FFFF
+
+// No Random Battles (Toggle on/off as desired for exploration)
+// patch=1,EE,003174F7,byte,00000000
+
+// Lightning Dodged 200 Times In a Row (for the Venus Sigil - activate before dodging one more bolt)
+// patch=1,EE,00319550,byte,000000C8
+
+// --- Combat & Character Power ---
+// Max HP All Characters & Aeons (Current HP - 99999)
+// patch=1,EE,4031E738,extended,00120025
+// patch=1,EE,0001869F,extended,00000000
+
+// Max MP All Characters & Aeons (Current MP - 9999)
+// patch=1,EE,4031E73C,extended,00120025
+// patch=1,EE,0000270F,extended,00000000
+
+// Max Stats All Characters & Aeons (Strength, Defense, Magic, Magic Defense, Agility, Luck, Evasion, Accuracy - All 255)
+// patch=1,EE,4031E728,extended,00120025
+// patch=1,EE,FFFFFFFF,extended,00000000
+// patch=1,EE,4031E72C,extended,00120025
+// patch=1,EE,FFFFFFFF,extended,00000000
+
+// Max Sphere Level (All Characters - set to 99)
+// Tidus
+// patch=1,EE,0031EAD7,byte,00000063
+// Yuna
+// patch=1,EE,0031EB6B,byte,00000063
+// Auron
+// patch=1,EE,0031EBFF,byte,00000063
+// Kimahri
+// patch=1,EE,0031EC93,byte,00000063
+// Wakka
+// patch=1,EE,0031ED27,byte,00000063
+// Lulu
+// patch=1,EE,0031EDBB,byte,00000063
+// Rikku
+// patch=1,EE,0031EE4F,byte,00000063
+
+// Max AP for Character Stats (For specific characters, to quickly learn new abilities/stats)
+// Replace '3B9AC9FF' with desired AP value (e.g., 270F for 9999 or 3B9AC9FF for max value)
+// patch=1,EE,2031EAD4,extended,3B9AC9FF // Tidus
+// patch=1,EE,2031EB68,extended,3B9AC9FF // Yuna
+// patch=1,EE,2031EBFC,extended,3B9AC9FF // Auron
+// patch=1,EE,2031EC90,extended,3B9AC9FF // Kimahri
+// patch=1,EE,2031ED24,extended,3B9AC9FF // Wakka
+// patch=1,EE,2031EDBC,extended,3B9AC9FF // Lulu
+// patch=1,EE,2031EE50,extended,3B9AC9FF // Rikku
+
+// Sphere Grid Movement Costs 0 S.Lvls (Allows free movement on the Sphere Grid)
+// patch=1,EE,001BE6CE,byte,00000060
+
+// All Sphere Grid Nodes Activated for All Characters (Use with extreme caution! Game becomes trivial)
+// patch=1,EE,4031E758,extended,00120025
+// patch=1,EE,FFFFFFFF,extended,00000000
+// patch=1,EE,4031E75C,extended,00120025
+// patch=1,EE,FFFFFFFF,extended,00000000
+// patch=1,EE,4031E760,extended,00120025
+// patch=1,EE,FFFFFFFF,extended,00000000
+// patch=1,EE,4031E764,extended,00120025
+// patch=1,EE,FFFFFFFF,extended,00000000
+
+// Unlimited MP (Infinite MP for spells and abilities in battle)
+// patch=1,EE,00316fa1,byte,00000001
+
+// Unlimited Overdrive (Overdrive gauge always full in battle)
+// patch=1,EE,00316fac,byte,00000001
+
+// Invincibility (Player Characters take no damage in battle)
+// patch=1,EE,00316f99,byte,00000001
+
+// All Applicable Attacks Critical Hit (applies to both you and enemies, so use with caution!)
+// patch=1,EE,00316fad,byte,00000001
+
+// Everything Does 99,999 Damage (applies to both you and enemies, including healing spells and items!)
+// patch=1,EE,00316fb0,byte,00000001
+
+// Always Rare Item Drop/Steal
+// patch=1,EE,00316fb1,byte,00000001
+
+// AP Gained After Battle x100
+// patch=1,EE,00316fb2,byte,00000001
+
+// Gil Gained After Battle x100
+// patch=1,EE,00316fb3,byte,00000001
+
+// Disable Overkill (prevents enemies from going into "overkill" state)
+// patch=1,EE,00316fb4,byte,00000001
+
+// Always Get Overkill (Ensures you always get Overkill bonus for max AP/items)
+// (Do not use with 'Disable Overkill' simultaneously)
+// patch=1,EE,00316fb4,byte,00000001
+
+// Always Preemptive Strike (Doesn't work for enemies that always ambush)
+// patch=1,EE,00316fc3,byte,00000001
+
+// Sensor Always On (Displays enemy HP and info in battle)
+// patch=1,EE,00316FB5,byte,00000001
+
+// Break Damage Limit (99,999 Limit)
+// patch=1,EE,201C2184,extended,3C030099
+
+// Break 99,999 Damage Limit On Some Items & Special Attacks
+// patch=1,EE,201C21A4,extended,3C0B0099
+
+// Break Item Damage/Healing Limit
+// patch=1,EE,201C21B4,extended,3C030099
+
+// Break HP Limit Completely Without Added Armor Ability Enabled (9999 & 99,999)
+// patch=1,EE,201BEED8,extended,3C0A05F6
+
+// Break MP Limit Completely Without Added Armor Ability Enabled (9999 & 99,999)
+// patch=1,EE,201BEF10,extended,3C0A05F6
+
+// All Characters Gain AP After Battle (Ensures everyone gets full AP, even if not active in battle)
+// patch=1,EE,2031F870,extended,01010101
+// patch=1,EE,2031F874,extended,01010101
+// patch=1,EE,2031F894,extended,01010101
+// patch=1,EE,2031F898,extended,01010101
+
+// Have All Aeons
+// patch=1,EE,0031855C,byte,000000FF // Basic Aeons
+// patch=1,EE,0031855D,byte,0000000F // Anima, Yojimbo, Magus Sisters
+
+// All Aeons Have Max Overdrive
+// patch=1,EE,4031F1C0,extended,00060002
+// patch=1,EE,000000FF,extended,00000000
+
+// --- Item Related (Use with caution!) ---
+// All Items x99 (Can cause issues if not carefully managed)
+// patch=1,EE,4031D49C,extended,00380001
+// patch=1,EE,20012000,extended,00020002
+// patch=1,EE,4031D69C,extended,001C0001
+// patch=1,EE,63636363,extended,00000000
+
+// All Key Items (Use with extreme caution - can break story progression!)
+// patch=1,EE,2031CE64,extended,FFFFFFFF
+// patch=1,EE,2031CE68,extended,FFFFFFFF
+// patch=1,EE,2031CE6C,extended,FFFFFFFF
+
+// --- Monster Arena Specifics ---
+// Obtain 10 Monsters For Each Capture (With A Capture Weapon - after one capture, sets count to 10)
+// patch=1,EE,201e18c0,word,0040280a
+
+// Unlock All Monster Arena Area Creations
+// patch=1,EE,7CA85484,extended,144CE7A6
+// patch=1,EE,429D8D2E,extended,E8942487
+// patch=1,EE,7CA854C0,extended,144BE7A6
+// patch=1,EE,429D8D2E,extended,E8942487
+// patch=1,EE,1CA854B0,extended,0E4CDD9F
+// patch=1,EE,1CA854B4,extended,0E4CDD9F
+// patch=1,EE,1CA854B8,extended,0E4CDD9F
+// patch=1,EE,4CA854AC,extended,1456DD9F
+// patch=1,EE,4CA854BC,extended,1456DD9F
+// patch=1,EE,3CA854AA,extended,1456E79F
+
+// Unlock All Monster Arena Species Creations
+// patch=1,EE,2031F8A0,extended,FFFFFFFF
+// patch=1,EE,2031F8A4,extended,FFFFFFFF
+// patch=1,EE,2031F8A8,extended,FFFFFFFF
+// patch=1,EE,2031F8AC,extended,FFFFFFFF
+// patch=1,EE,2031F8B0,extended,FFFFFFFF
+
+// Unlock All Monster Arena Original Creations (including Nemesis)
+// patch=1,EE,2031F8B4,extended,FFFFFFFF
+// patch=1,EE,2031F8B8,extended,FFFFFFFF
+// patch=1,EE,2031F8BC,extended,FFFFFFFF
+// patch=1,EE,2031F8C0,extended,FFFFFFFF
+
+// --- Blitzball Specifics ---
+// Max Blitzball League/Tournament Points (Get 99 points instantly for easy rewards)
+// patch=1,EE,0031A78E,byte,00000063
+// patch=1,EE,0031A7F1,byte,00000063
+
+// Aurochs are Level 255 (Maxes out the level for your team members)
+// patch=1,EE,1031A70A,extended,0000FFFF
+// patch=1,EE,2031A70C,extended,FFFFFFFF
+// patch=1,EE,0031A710,byte,000000FF
+
+// Aurochs Have 9999 Experience (Allows your players to gain levels extremely quickly if not already maxed)
+// patch=1,EE,2031A8A4,extended,270F270F
+// patch=1,EE,2031A8A8,extended,270F270F
+// patch=1,EE,2031A8AC,extended,270F270F
+// patch=1,EE,1031A8B0,extended,0000270F
+
+// Aurochs Have All Abilities (All learnable techniques are available to your team members)
+// patch=1,EE,4031A33C,extended,00070001
+// patch=1,EE,FFFFFFFF,extended,00000000
+// patch=1,EE,4031A42C,extended,00070001
+// patch=1,EE,FFFFFFFF,extended,00000000
+
+// Aurochs Can Set 5 Abilities (Increases the number of techniques your players can equip at once)
+// patch=1,EE,1031A6CE,extended,00000505
+// patch=1,EE,2031A6D0,extended,05050505
+// patch=1,EE,0031A6D4,byte,00000005
+
+// Blitzball Game Length Modifier (Shorten the duration of each game)
+// Replace '????' with desired length (e.g., 0064 for shorter games, 0001 for very short games)
+// Default is 012C.
+// patch=1,EE,11023E58,extended,0000????
+
+// Opponent Team Level Modifier (Set opponent's level)
+// Replace YY with a level (e.g., 01 for very easy, 63 for max level)
+// This code targets the first opponent team slot. May need to be adjusted for specific matches.
+// patch=1,EE,0031A721,byte,000000YY
+
+// Player Max Stats in Blitzball (For ALL players on ALL teams, including enemies - use with caution!)
+// patch=1,EE,4031A7A4,extended,000F0001
+// patch=1,EE,000000FF,extended,00000000
+// patch=1,EE,4031A7A8,extended,000F0001
+// patch=1,EE,000000FF,extended,00000000
+
+// --- Debug / Fun Cheats ---
+// Control Enemies (allows you to select enemy actions in battle)
+// patch=1,EE,00316F9A,byte,00000001
+
+// Invincible Enemies (they take no damage - useful for photography or observing attacks)
+// patch=1,EE,00316f98,byte,00000001
+
+// All characters enter battle at 1 HP (useful for triggering Overdrives immediately)
+// patch=1,EE,00316fbd,byte,00000001
+
+// All enemies enter battle at 1 HP (useful for quick kills, especially for farming)
+// patch=1,EE,00316fbe,byte,00000001
+
+// Display Battlefield Coordinate Grid (visual aid in battle)
+// patch=1,EE,00316fbb,byte,00000001
+
+// All Evadable Abilities Miss + Status Never Inflicted
+// patch=1,EE,00316fbf,byte,00000001
+
+// Disable Random Variance on Damage (Damage rolls become fixed)
+// patch=1,EE,00314158,byte,00000001
